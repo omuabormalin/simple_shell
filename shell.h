@@ -42,7 +42,7 @@ extern char **environ;
  *   * @num: the number field
  *    * @str: a string
  *     * @next: points to the next node
- *      */
+ */
 typedef struct liststr
 {
 		int num;
@@ -71,7 +71,7 @@ typedef struct liststr
  *                   *@cmd_buf_type: CMD_type ||, &&, ;
  *                    *@readfd: the fd from which to read line input
  *                     *@histcount: the history line number count
- *                      */
+ */
 typedef struct passinfo
 {
 		char *arg;
@@ -89,7 +89,7 @@ typedef struct passinfo
 														int env_changed;
 															int status;
 
-																char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
+																char **cmd_buf; /* pointer to cmd*/
 																	int cmd_buf_type; /* CMD_type ||, &&, ; */
 																		int readfd;
 																			int histcount;
@@ -103,7 +103,7 @@ typedef struct passinfo
  *  *struct builtin - contains a builtin string and related function
  *   *@type: the builtin command flag
  *    *@func: the function
- *     */
+ */
 typedef struct builtin
 {
 		char *type;
